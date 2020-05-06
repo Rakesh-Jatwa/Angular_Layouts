@@ -1,12 +1,8 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { ModuleRoutingModule } from './module-routing.module';
+import { MydriveComponent } from "./mydrive/mydrive.component";
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { RegisterComponent } from './Auth/register/register.component';
-import { LoginComponent } from './Auth/login/login.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 
 import { MatCardModule } from "@angular/material/card";
 import { MatStepperModule } from '@angular/material/stepper';
@@ -50,30 +46,19 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatTreeModule } from '@angular/material/tree';
-import { SharedService } from './common/shared.service';
 import { HttpClientModule } from '@angular/common/http';
 import { RxReactiveFormsModule } from '@rxweb/reactive-form-validators';
 import { ToastrModule } from 'ngx-toastr';
-import { PanelModule } from './panel/panel.module';
-// import { MydriveComponent } from './Modules/mydrive/mydrive.component';
-
 
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    RegisterComponent,
-    LoginComponent,
-    // MydriveComponent,
-   
+    MydriveComponent
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    FormsModule,
-    ReactiveFormsModule,
+    CommonModule,
+    ModuleRoutingModule,
     HttpClientModule,
     RxReactiveFormsModule,
     ToastrModule.forRoot({
@@ -81,7 +66,7 @@ import { PanelModule } from './panel/panel.module';
       positionClass: 'toast-top-center',
       preventDuplicates: true,
     }),
-   PanelModule,
+  
     MatCardModule,
     MatStepperModule,
     A11yModule,
@@ -127,9 +112,53 @@ import { PanelModule } from './panel/panel.module';
     MatTreeModule,
     PortalModule,
     ScrollingModule,
-  
   ],
-  providers: [SharedService,CdkStepper],
-  bootstrap: [AppComponent]
+  exports: [
+    MatCardModule,
+    MatStepperModule,
+    A11yModule,
+    ClipboardModule,
+    CdkStepperModule,
+    CdkTableModule,
+    CdkTreeModule,
+    DragDropModule,
+    MatAutocompleteModule,
+    MatBadgeModule,
+    MatBottomSheetModule,
+    MatButtonModule,
+    MatButtonToggleModule,
+    MatCardModule,
+    MatCheckboxModule,
+    MatChipsModule,
+    MatStepperModule,
+    MatDatepickerModule,
+    MatDialogModule,
+    MatDividerModule,
+    MatExpansionModule,
+    MatGridListModule,
+    MatIconModule,
+    MatInputModule,
+    MatListModule,
+    MatMenuModule,
+    MatNativeDateModule,
+    MatPaginatorModule,
+    MatProgressBarModule,
+    MatProgressSpinnerModule,
+    MatRadioModule,
+    MatRippleModule,
+    MatSelectModule,
+    MatSidenavModule,
+    MatSliderModule,
+    MatSlideToggleModule,
+    MatSnackBarModule,
+    MatSortModule,
+    MatTableModule,
+    MatTabsModule,
+    MatToolbarModule,
+    MatTooltipModule,
+    MatTreeModule,
+    PortalModule,
+    ScrollingModule,
+  ]
 })
-export class AppModule { }
+export class ModuleModule { }

@@ -1,11 +1,11 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { HeaderComponent } from './header/header.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { FooterComponent } from './footer/footer.component';
+import { RouterModule } from '@angular/router';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { RegisterComponent } from './Auth/register/register.component';
-import { LoginComponent } from './Auth/login/login.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 
 import { MatCardModule } from "@angular/material/card";
@@ -50,38 +50,29 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatTreeModule } from '@angular/material/tree';
-import { SharedService } from './common/shared.service';
+// import { SharedService } from './common/shared.service';
 import { HttpClientModule } from '@angular/common/http';
 import { RxReactiveFormsModule } from '@rxweb/reactive-form-validators';
-import { ToastrModule } from 'ngx-toastr';
-import { PanelModule } from './panel/panel.module';
-// import { MydriveComponent } from './Modules/mydrive/mydrive.component';
+import { MydriveComponent } from '../Modules/mydrive/mydrive.component';
+// import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    RegisterComponent,
-    LoginComponent,
-    // MydriveComponent,
-   
-  ],
+    HeaderComponent,
+    SidebarComponent,
+    FooterComponent,
+ ],
   imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
+    CommonModule,
+    RouterModule,
+    FlexLayoutModule,
+    // BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule,
-    RxReactiveFormsModule,
-    ToastrModule.forRoot({
-      timeOut: 3000,
-      positionClass: 'toast-top-center',
-      preventDuplicates: true,
-    }),
-   PanelModule,
+
     MatCardModule,
     MatStepperModule,
     A11yModule,
@@ -127,9 +118,13 @@ import { PanelModule } from './panel/panel.module';
     MatTreeModule,
     PortalModule,
     ScrollingModule,
-  
+
   ],
-  providers: [SharedService,CdkStepper],
-  bootstrap: [AppComponent]
+  exports: [
+    HeaderComponent,
+    SidebarComponent,
+    FooterComponent,
+   
+  ]
 })
-export class AppModule { }
+export class SharedcomponentModule { }

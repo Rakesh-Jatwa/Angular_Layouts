@@ -1,0 +1,41 @@
+<nav id="sidebar">
+    <div>
+        <!-- <button class="example-container" mat-button  (click)="onClickOpen()">New </button> -->
+         <button class="example-container" mat-button [matMenuTriggerFor]="menu"> + New</button>
+        <mat-menu #menu="matMenu" >
+            <button mat-menu-item><mat-icon>create_new_folder</mat-icon>Folder</button>
+            <hr>
+            <button mat-menu-item><mat-icon>upload_file UploadFile</mat-icon></button>
+        </mat-menu> 
+    </div>
+
+    <ul class="navbar-nav">
+        <li class="nav-item active"> 
+            <button mat-button class="classnave" style="color: black" > 
+                <mat-icon>cloud_queue</mat-icon> &nbsp; &nbsp;&nbsp; My Drive
+            </button>
+        </li>
+        <li class="nav-item active">
+            <button mat-button class="classnave" style="color: black" href="#">
+                <mat-icon>people_alt</mat-icon> &nbsp; &nbsp;&nbsp; Shared with me
+            </button>
+        </li>
+        <li class="nav-item active">
+            <button mat-button class="classnave" style="color: black" href="#">
+                <mat-icon>schedule</mat-icon> &nbsp; &nbsp;&nbsp; Recent
+            </button>
+        </li>
+        <li class="nav-item active">
+            <button mat-button class="classnave" style="color: black" href="#">
+                <mat-icon>star_border</mat-icon> &nbsp; &nbsp;&nbsp; Starred
+            </button>
+        </li>
+        <li class="nav-item active">
+            <button mat-button class="classnave" style="color: black" href="#">
+                <mat-icon>delete</mat-icon> &nbsp; &nbsp;&nbsp; Trash
+
+            </button>
+        </li>
+    </ul>
+</nav>
+<hr>

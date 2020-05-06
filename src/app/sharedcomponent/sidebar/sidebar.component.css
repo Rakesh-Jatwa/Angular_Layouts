@@ -1,0 +1,121 @@
+:host{
+    padding: 20px;
+    background-color: white;
+}
+
+
+ nav{
+   margin-top: -17px
+ }
+#sidebar {
+min-width: 200px;
+max-width: 230px;
+min-height: 100vh;
+color: #fff;
+transition: all 0.3s;
+font-weight: 300;
+font-size: 2rem;
+line-height: 1.5;
+}
+ 
+#sidebar.hidden {
+  margin-left: -200px;
+}
+ 
+a[data-toggle="collapse"] {
+  position: relative;
+}
+ 
+@media (max-width: 575px) {
+  #sidebar {
+      margin-left: -200px;
+  }
+  #sidebar.hidden {
+      margin-left: 0;
+  }
+}
+ 
+ .classnave:hover, .classnave:focus {
+  
+  background-color: #e8f0fe;
+  border-top: 1px solid #fff;
+      overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    -webkit-box-flex: 1 1 auto;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+    vertical-align: middle;
+    white-space: nowrap;
+
+}
+ 
+#sidebar .sidebar-header {
+  padding: 20px;
+}
+ 
+#sidebar ul li a {
+padding: 15px;
+display: block;
+width: 100%;
+/* &:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+} */
+}
+ 
+/* hr {
+border-top: 1px solid #fff;
+m argin-top: 0;
+} */
+
+  .classnave{
+ 
+    /* background-color: #e8f0fe; */
+    border: solid transparent;
+    border-width: 1px 1px 1px 0;
+     color: black;
+    padding-right: 110px;
+    border-radius: 16px;
+   outline: none;
+   background-color:#fff;
+ }
+/* .classnave:hover{
+   background-color: rgba(255, 255, 255, 0.1);
+}  */
+/* 
+.headerbuttobn{
+  border-color: aliceblue;
+  background-color: #fff; 
+} */
+.example-container {
+  color: black;
+    border-radius: 30px;
+    border-color: skyblue;
+    background-color:white;
+    padding: initial;
+    padding-left: 40px;
+    padding-top: 10px;
+    text-align: left;
+    padding-right: 20%;
+    outline-color:white;
+    margin-left: 10px;
+    box-shadow:1px 0px 2px 1px gainsboro;
+
+    
+}
+/* .mat-menu{
+  padding-left: 175px;
+} */
+button.mat-menu-item {
+    width: 100%;
+    padding-right: 175px;
+    text-align: center;
+    border: none;
+    border-color: white;
+    size: 0rem;
+}
+button.mat-menu-item{
+  text-align: center;
+ border-top-color: antiquewhite;
+
+}

@@ -1,0 +1,35 @@
+.example-card{
+    width: 500px;
+    height: 600px;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    margin-left: 35%;
+    margin-right:30%;
+    /* border-color: 2px 2px 2px 2px solid red; */
+    /* background-color: whitesmoke; */
+
+}
+mat-card-header{
+   padding: 110px ;
+    /* background-color: whitesmoke; */
+ ;
+}
+
+.mat-stepper-horizontal {
+ padding-right:-173px;
+  /* background-color: whitesmoke; */
+
+}
+
+
+mat-form-field.mat-form-field {
+  font-size: 16px;
+ margin-inline-start: 75px;
+   /* background-color: whitesmoke; */
+}
+/* .mat-form-field-appearance-outline .mat-form-field-flex {
+    padding: 0 .75em 0 .75em;
+    margin-top: -0.25em;
+    position: relative;
+    padding-right: 220px;
+} */

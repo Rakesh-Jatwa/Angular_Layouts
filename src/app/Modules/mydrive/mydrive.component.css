@@ -1,0 +1,14 @@
+
+button.mat-menu-item {
+    width: 100%;
+    padding-right: 175px;
+    text-align: center;
+    border: none;
+    border-color: white;
+    size: 0rem;
+}
+button.mat-menu-item{
+  text-align: center;
+ border-top-color: antiquewhite;
+
+}

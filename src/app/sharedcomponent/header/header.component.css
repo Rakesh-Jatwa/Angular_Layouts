@@ -1,0 +1,9 @@
+header{
+    padding: 15px;
+    background-color: white;
+    color: black;
+}
+.mat-icon{
+    padding-left: inherit;
+    color: skyblue;
+}

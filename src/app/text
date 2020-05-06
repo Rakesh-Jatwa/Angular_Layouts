@@ -1,0 +1,57 @@
+
+    var array = ["harry", 18, "rakesh"];
+    array[2] = 20;
+    console.log(array);
+  //  array methodes-----
+    // 1. sort --> sorting of arrya in ascending order
+    // 
+    var arr1 = ["rakesh", "jatwa", "om","ajay","data"];
+    arr1.sort();
+    console.log(arr1);
+    // reverse method
+    console.log(arr1.reverse());
+    // pop & push
+    arr1.pop();
+    console.log('pop',arr1);
+    arr1.push("ajay");
+    console.log('push', arr1);
+    // shift(delete array firts value) & unshift(unshift for add value in first index)
+    arr1.shift()
+    console.log("shift",arr1);
+    var os= arr1.unshift("data");
+    console.log("unshift", os);
+    // concat(merg two array or adding string or arrays) and join ( all array valuwes ko mjoin ke throw singls string bana sakte he ) 
+    var c = array.concat(arr1);
+    var d = array.join(" ");
+    console.log("join", d);
+    // slicee(it take two agr indexes)
+    var s = arr1.slice(2, 4);
+    console.log("slice", s);
+        //  splice methode it used for insert data in between array elements 
+    // var splice = os.splice(index, 0, "object","ddd");
+    // console.log("join", d);
+    // console.log('splice',splice);
+    
+
+// Create drive Table for googledrive databases;
+
+    CREATE TABLE IF NOT EXISTS covid19 (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    firstname VARCHAR(255),
+    lastname VARCHAR(255),
+    email VARCHAR(255) UNIQUE NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+)  ENGINE=INNODB;
+
+// eample for usnique key 
+CREATE TABLE IF NOT EXISTS contacts (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(50) NOT NULL,
+    last_name VARCHAR(50) NOT NULL,
+    phone VARCHAR(15) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    UNIQUE unique_email KEY (email)
+);
+
+// update query
